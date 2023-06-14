@@ -18,6 +18,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IBlogPostRepository, BlogPostRepository>();
 
 var app = builder.Build();
 
